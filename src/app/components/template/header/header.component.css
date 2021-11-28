@@ -1,0 +1,12 @@
+.logo {
+    display: flex;
+    max-height: 32px;
+}
+
+.header {
+    background-color: lightcyan;
+}
+
+button {
+    color: purple;
+}

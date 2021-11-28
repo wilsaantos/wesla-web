@@ -1,0 +1,17 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    background-color: black;
+}
+
+.footer a {
+    align-self: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.contactMe {
+    display: flexbox;
+    margin-left: 15px;
+}

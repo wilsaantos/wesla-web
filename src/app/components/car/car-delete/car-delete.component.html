@@ -1,0 +1,35 @@
+<mat-card class="mat-elevation-z8">
+    <mat-card-title>Deletar Veículo</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput 
+            [value]="car.modelo" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput 
+            [value]="car.marca" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput 
+            [value]="car.ano" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput 
+            [value]="car.valor" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput 
+            [value]="car.cor" disabled>
+        </mat-form-field>
+    </form>
+
+<button mat-raised-button (click)="deleteCar()" class="deleteButton" style="background-color: red;">
+    Deletar
+</button>
+
+<button mat-raised-button (click)="cancelCar()" class="cancelButton">
+    Cancelar
+</button>
+
+</mat-card>
+

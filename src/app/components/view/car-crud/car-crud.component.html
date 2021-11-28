@@ -1,0 +1,35 @@
+<body>
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<div class="divAll">
+<mat-accordion>
+  <mat-expansion-panel hideToggle style="background: linear-gradient(to left, #8942a8, #ba382f);">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+      </mat-panel-title>
+      <mat-panel-description>
+        <span class="material-icons">
+            visibility
+            </span>            
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div >
+    <button mat-raised-button class="add" (click)="openCreateDialog()">
+        <i class="material-icons v-middle">
+            directions_car_filled
+        </i>
+        Adicionar Veículo
+    </button>
+    <button mat-raised-button class="deprecate v-middle" (click)="deprecateAll()">
+        <i class="material-icons">remove_circle_outline</i>
+        Depreciar Todos
+    </button>
+</div>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+  </mat-expansion-panel>
+</mat-accordion>
+</div>
+
+<app-car-read></app-car-read>
+</body>

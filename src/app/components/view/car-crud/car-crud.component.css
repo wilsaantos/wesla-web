@@ -1,0 +1,28 @@
+.add {
+    background-color: rgb(1, 218, 1);
+    color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    opacity: 85%;
+}
+
+.deprecate {
+    border-radius: 20px;
+    margin: auto;
+    margin-left: 10px;
+    background-color: yellow;
+    opacity: 85%;
+}
+
+.add:hover {
+    opacity: 100%;
+}
+
+.deprecate:hover {
+    opacity: 100%;
+}
+
+body {
+    background: linear-gradient(to left, #8942a8, #ba382f);
+}

@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Cadastrar Veículo</h1>
+<div mat-dialog-content>
+    <form [formGroup]="createForm">
+        <mat-form-field>
+            <input matInput placeholder="Modelo" formControlName="modelo" name="modelo" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Marca" formControlName="marca" name="marca" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Ano" formControlName="ano" type="number" name="ano" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Valor" formControlName="valor" type="number" name="valor" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Cor" formControlName="cor" name="cor" required>
+        </mat-form-field>
+
+
+        <button mat-raised-button (click)="createCar()" class="saveButton"
+            [disabled]="!createForm.valid">
+            Salvar
+        </button>
+
+        <button mat-raised-button (click)="cancelCar()" class="cancelButton">
+            Cancelar
+        </button>
+    </form>
+</div>
+

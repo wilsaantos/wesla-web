@@ -1,0 +1,29 @@
+mat-form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+mat-card-title {
+    padding-bottom: 15px;
+    margin-left: 30%;
+}
+
+button {
+    margin-left: 100px;
+}
+
+.saveButton {
+    background-color: green;
+    color: white;
+}
+
+.cancelButton {
+    margin-left: 150px;
+    color: white;
+    background-color: purple;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+}
