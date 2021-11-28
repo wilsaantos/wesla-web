@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "frontend": {
+    "wesla": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -92,10 +92,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "frontend:build:production"
+              "browserTarget": "wesla:build:production"
             },
             "development": {
-              "browserTarget": "frontend:build:development"
+              "browserTarget": "wesla:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -103,11 +103,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "frontend:build"
+            "browserTarget": "wesla:build"
           }
         }
       }
     }
   },
-  "defaultProject": "frontend"
+  "defaultProject": "wesla"
 }
